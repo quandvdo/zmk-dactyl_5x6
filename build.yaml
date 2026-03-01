@@ -18,3 +18,8 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: nice_nano
+    shield: dactyl_5x6_cc_left
+  - board: nice_nano
+    shield: dactyl_5x6_cc_right

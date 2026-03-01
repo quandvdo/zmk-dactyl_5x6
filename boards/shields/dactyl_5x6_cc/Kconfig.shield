@@ -1,0 +1,3 @@
+config SHIELD_DACTYL_5X6_CC
+    def_bool y
+    select ZMK_SPLIT_KEYBOARD

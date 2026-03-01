@@ -1,0 +1,36 @@
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,split-uart = &uart0;
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+
+        col-gpios = <
+            &gpio0 29 GPIO_ACTIVE_LOW   // P0.29
+            &gpio0  2 GPIO_ACTIVE_LOW   // P0.02
+            &gpio1 15 GPIO_ACTIVE_LOW   // P1.15
+            &gpio1 13 GPIO_ACTIVE_LOW   // P1.13
+            &gpio1 11 GPIO_ACTIVE_LOW   // P1.11
+            &gpio0  9 GPIO_ACTIVE_LOW   // P0.09
+        >;
+
+        row-gpios = <
+            &gpio1  6 GPIO_ACTIVE_LOW   // P1.06
+            &gpio1  4 GPIO_ACTIVE_LOW   // P1.04
+            &gpio0 11 GPIO_ACTIVE_LOW   // P0.11
+            &gpio1  0 GPIO_ACTIVE_LOW   // P1.00
+            &gpio0 24 GPIO_ACTIVE_LOW   // P0.24
+            &gpio0 22 GPIO_ACTIVE_LOW   // P0.22
+        >;
+    };
+
+    &uart0 {
+        status = "okay";
+        current-speed = <115200>;
+
+        tx-pin = <6>;  // P0.06
+    };
+};

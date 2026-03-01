@@ -1,0 +1,7 @@
+#include "dactyl_5x6_cc.dtsi"
+
+/ {
+    chosen {
+        zmk,split-role = "peripheral";
+    };
+};
