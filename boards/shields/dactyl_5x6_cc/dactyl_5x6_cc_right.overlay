@@ -3,7 +3,7 @@
 
 / {
     chosen {
-        zmk,split-role = "peripheral";
+        zmk,split-role = "central";
         zmk,split-uart = &uart0;
     };
 };

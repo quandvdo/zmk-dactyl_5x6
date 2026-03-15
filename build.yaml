@@ -20,6 +20,4 @@
 ---
 include:
   - board: nice_nano
-    shield: dactyl_5x6_cc_left
-  - board: nice_nano
-    shield: dactyl_5x6_cc_right
+    shield: volume_control

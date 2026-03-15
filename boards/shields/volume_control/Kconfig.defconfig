@@ -1,0 +1,6 @@
+if SHIELD_VOLUME_CONTROL
+
+config ZMK_KEYBOARD_NAME
+    default "volume_control"
+
+endif # SHIELD_VOLUME_CONTROL
